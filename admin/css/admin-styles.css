@@ -1,0 +1,1018 @@
+/**
+ * Admin Styles - Enhanced Professional Design
+ *
+ * @package Smart_FAQ_Manager
+ */
+
+/* ==========================================================================
+   Header & Dashboard Stats
+   ========================================================================== */
+
+.smart-faq-admin-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0 30px 0;
+    padding: 30px;
+}
+
+.smart-faq-welcome {
+    margin-bottom: 25px;
+}
+
+.smart-faq-welcome h2 {
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.smart-faq-welcome p {
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    margin: 0;
+}
+
+.smart-faq-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.smart-faq-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.smart-faq-actions .button {
+    background: #fff;
+    color: #667eea;
+    border: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.smart-faq-actions .button:hover {
+    background: #f8f9ff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.smart-faq-actions .button:before {
+    font-family: dashicons;
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#clear-cache-btn:before {
+    content: '\f463';
+}
+
+#export-faqs-btn:before {
+    content: '\f316';
+}
+
+#import-faqs-btn:before {
+    content: '\f317';
+}
+
+/* ==========================================================================
+   Status Badges
+   ========================================================================== */
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-active {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #10b981;
+}
+
+.status-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #ef4444;
+}
+
+.status-draft {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+}
+
+/* ==========================================================================
+   Forms & Inputs
+   ========================================================================== */
+
+.postbox {
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.postbox-header h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.postbox .inside {
+    padding: 20px;
+}
+
+#priority-slider {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #e5e7eb;
+    border-radius: 4px;
+    outline: none;
+}
+
+#priority-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #667eea;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#priority-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #667eea;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.priority-value {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#priority-display {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #667eea;
+    background: #f3f4ff;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   Analytics Dashboard
+   ========================================================================== */
+
+.smart-faq-analytics-dashboard {
+    background: #fff;
+}
+
+.analytics-overview {
+    margin-bottom: 40px;
+}
+
+.analytics-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(102,126,234,0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(102,126,234,0.3);
+}
+
+.stat-card .stat-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-card .stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.analytics-section {
+    margin-bottom: 35px;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.analytics-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+}
+
+.analytics-section h2:before {
+    font-family: dashicons;
+    content: '\f239';
+    margin-right: 10px;
+    color: #667eea;
+    font-size: 24px;
+}
+
+.analytics-section .description {
+    color: #6b7280;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+.wp-list-table.smart-faq-table {
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.wp-list-table.smart-faq-table thead th {
+    background: #f9fafb;
+    color: #374151;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.wp-list-table.smart-faq-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.wp-list-table.smart-faq-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.wp-list-table.smart-faq-table tbody td {
+    padding: 15px 10px;
+}
+
+/* Engagement indicators */
+.engagement-high {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.engagement-medium {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.engagement-low {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+/* Progress bars for engagement */
+.engagement-bar {
+    width: 100%;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.engagement-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+    transition: width 0.3s ease;
+}
+
+.engagement-bar-fill.low {
+    background: linear-gradient(90deg, #ef4444 0%, #f87171 100%);
+}
+
+.engagement-bar-fill.medium {
+    background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+}
+
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+
+.smart-faq-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smart-faq-modal-content {
+    background-color: #fff;
+    margin: 8% auto;
+    padding: 35px;
+    border: none;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.smart-faq-modal-content h2 {
+    margin-top: 0;
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.smart-faq-modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #9ca3af;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+    transition: color 0.2s ease;
+}
+
+.smart-faq-modal-close:hover,
+.smart-faq-modal-close:focus {
+    color: #ef4444;
+}
+
+#import-form {
+    margin-top: 25px;
+}
+
+#import-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px dashed #d1d5db;
+    border-radius: 6px;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+#import-form input[type="file"]:hover {
+    border-color: #667eea;
+    background: #fff;
+}
+
+#import-form .button-primary {
+    background: #667eea;
+    border-color: #667eea;
+    padding: 10px 24px;
+    font-weight: 500;
+}
+
+#import-form .button-primary:hover {
+    background: #5568d3;
+    border-color: #5568d3;
+}
+
+/* ==========================================================================
+   Category Management
+   ========================================================================== */
+
+.smart-faq-categories {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.smart-faq-category-info {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    padding: 25px;
+    border-left: 4px solid #0ea5e9;
+    border-radius: 6px;
+    margin-top: 25px;
+}
+
+.smart-faq-category-info h2 {
+    margin-top: 0;
+    color: #0c4a6e;
+    font-size: 18px;
+}
+
+.smart-faq-category-info p {
+    color: #075985;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Settings Page
+   ========================================================================== */
+
+.form-table th {
+    color: #374151;
+    font-weight: 600;
+}
+
+.form-table td {
+    padding: 15px 10px;
+}
+
+h2.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+h2.title:first-of-type {
+    margin-top: 0;
+}
+
+.submit .button-primary {
+    background: #667eea;
+    border-color: #667eea;
+    padding: 10px 24px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.submit .button-primary:hover {
+    background: #5568d3;
+    border-color: #5568d3;
+}
+
+/* ==========================================================================
+   FAQ Edit Page
+   ========================================================================== */
+
+#poststuff .postbox {
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+#poststuff .postbox-header {
+    background: linear-gradient(to bottom, #fafafa 0%, #f5f5f5 100%);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 20px;
+}
+
+#poststuff .postbox-header h2 {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#major-publishing-actions .button-primary {
+    background: #667eea;
+    border-color: #667eea;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 500;
+}
+
+#major-publishing-actions .button-primary:hover {
+    background: #5568d3;
+    border-color: #5568d3;
+}
+
+.misc-pub-section {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.misc-pub-section:last-child {
+    border-bottom: none;
+}
+
+.misc-pub-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.misc-pub-section select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   List Table Enhancements
+   ========================================================================== */
+
+.widefat tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.row-actions {
+    color: #6b7280;
+}
+
+.row-actions span a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.row-actions span a:hover {
+    color: #5568d3;
+    text-decoration: underline;
+}
+
+.row-actions .delete a,
+.row-actions .delete-faq {
+    color: #ef4444;
+}
+
+.row-actions .delete a:hover {
+    color: #dc2626;
+}
+
+.column-question strong a {
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.column-question strong a:hover {
+    color: #667eea;
+}
+
+/* ==========================================================================
+   Meta Box (Manual Selection)
+   ========================================================================== */
+
+.smart-faq-meta-box {
+    font-size: 13px;
+}
+
+.smart-faq-meta-box p {
+    margin: 12px 0;
+}
+
+.smart-faq-meta-box label {
+    cursor: pointer;
+    padding: 8px 0;
+    display: block;
+}
+
+.smart-faq-meta-box label:hover {
+    background: #f9fafb;
+    margin: 0 -10px;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.smart-faq-meta-box hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+}
+
+.smart-faq-selection-container {
+    transition: opacity 0.3s;
+}
+
+.smart-faq-selection-container > div {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 6px;
+}
+
+.smart-faq-selection-container label {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   Appearance Settings
+   ========================================================================== */
+
+.smart-faq-appearance-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.smart-faq-appearance-settings {
+    flex: 1;
+    max-width: 650px;
+}
+
+.smart-faq-appearance-preview {
+    flex: 1;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    position: sticky;
+    top: 32px;
+    height: fit-content;
+}
+
+.smart-faq-appearance-preview h2 {
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.smart-faq-appearance-preview .description {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+#smart-faq-preview-container {
+    margin-top: 20px;
+}
+
+.smart-faq-reset-color {
+    color: #ef4444;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.smart-faq-reset-color:hover {
+    text-decoration: underline;
+    color: #dc2626;
+}
+
+.wp-picker-container {
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   Buttons & Actions
+   ========================================================================== */
+
+.page-title-action {
+    background: #667eea !important;
+    border-color: #667eea !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+
+.page-title-action:hover {
+    background: #5568d3 !important;
+    border-color: #5568d3 !important;
+}
+
+.button.button-secondary {
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.button.button-secondary:hover {
+    border-color: #9ca3af;
+    color: #1f2937;
+}
+
+/* ==========================================================================
+   Notices & Messages
+   ========================================================================== */
+
+.notice.notice-success {
+    border-left-color: #10b981;
+}
+
+.notice.notice-error {
+    border-left-color: #ef4444;
+}
+
+.notice.notice-warning {
+    border-left-color: #f59e0b;
+}
+
+.notice.notice-info {
+    border-left-color: #3b82f6;
+}
+
+/* ==========================================================================
+   Tabs (for future use)
+   ========================================================================== */
+
+.smart-faq-tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 25px;
+    gap: 5px;
+}
+
+.smart-faq-tab {
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.smart-faq-tab:hover {
+    color: #667eea;
+    background: #f9fafb;
+}
+
+.smart-faq-tab.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+/* ==========================================================================
+   Info Cards & Help Boxes
+   ========================================================================== */
+
+.smart-faq-info-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid #bae6fd;
+    border-left: 4px solid #0ea5e9;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.smart-faq-info-card h3 {
+    margin-top: 0;
+    color: #0c4a6e;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.smart-faq-info-card h3:before {
+    font-family: dashicons;
+    content: '\f348';
+    margin-right: 8px;
+    color: #0ea5e9;
+}
+
+.smart-faq-info-card p {
+    color: #075985;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.smart-faq-warning-card {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 1px solid #fbbf24;
+    border-left: 4px solid #f59e0b;
+}
+
+.smart-faq-warning-card h3:before {
+    content: '\f227';
+    color: #f59e0b;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.smart-faq-loading {
+    opacity: 0.6;
+    pointer-events: none;
+    position: relative;
+}
+
+.smart-faq-loading:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #667eea;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media screen and (max-width: 1280px) {
+    .smart-faq-appearance-container {
+        flex-direction: column;
+    }
+    
+    .smart-faq-appearance-preview {
+        position: static;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .smart-faq-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .smart-faq-actions {
+        flex-direction: column;
+    }
+    
+    .smart-faq-actions .button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .analytics-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-card .stat-number {
+        font-size: 32px;
+    }
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+.smart-faq-text-muted {
+    color: #6b7280;
+}
+
+.smart-faq-text-success {
+    color: #10b981;
+}
+
+.smart-faq-text-warning {
+    color: #f59e0b;
+}
+
+.smart-faq-text-danger {
+    color: #ef4444;
+}
+
+.smart-faq-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.smart-faq-badge-primary {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.smart-faq-badge-success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .smart-faq-admin-header,
+    .smart-faq-actions,
+    .page-title-action,
+    .row-actions {
+        display: none !important;
+    }
+}
