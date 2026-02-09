@@ -5,7 +5,6 @@
  * Description: Dynamically display contextually relevant FAQs based on page content using local content analysis
  * Version: 1.0
  * Requires at least: 6.2
- * Tested up to: 6.9.1
  * Requires PHP: 7.4
  * Author: Smart FAQ Manager Team
  * Author URI: https://wordpress.org/plugins/smart-faq-manager
